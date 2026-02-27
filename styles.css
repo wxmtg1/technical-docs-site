@@ -9,7 +9,7 @@ nav {
     overflow-y: auto;
     padding: 20px;
 
-    /* NEW: make sidebar a flex column */
+    /* CRITICAL: make sidebar a flex column */
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +34,7 @@ nav a.active {
     font-weight: bold;
 }
 
-/* NEW: push footer to the bottom */
+/* Footer section — pushed to bottom */
 .sidebar-footer {
     margin-top: auto; /* pushes footer down */
     padding-top: 20px;
