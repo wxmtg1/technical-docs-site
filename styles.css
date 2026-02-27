@@ -1,10 +1,47 @@
-/* Sidebar Footer */
+/* Sidebar */
+nav {
+    width: 250px;
+    background-color: #1e1e2f;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+
+    /* NEW: make sidebar a flex column */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar links */
+nav a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 6px 0;
+    transition: color 0.2s ease-in-out, padding-left 0.2s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+    padding-left: 6px;
+}
+
+nav a.active {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* NEW: push footer to the bottom */
 .sidebar-footer {
-    margin-top: 40px;
+    margin-top: auto; /* pushes footer down */
     padding-top: 20px;
     border-top: 2px solid #444;
 }
 
+/* Footer items */
 .footer-item {
     display: flex;
     align-items: center;
